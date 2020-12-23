@@ -1,40 +1,6 @@
 import React , {useState} from "react";
 
 function CreateArea(props) {
-    
-    // const [note , setNote] = useState({
-    //     title: "",
-    //     content: "" 
-    // }) ;
-
-    // const [notesArr , setNotes ] = useState([]) ;
-
-    // function handleChange(event){
-    //     const {name,value} = event.target ;
-
-    //     setNote( prevValue => {
-    //         return {
-    //             ...prevValue,
-    //             [name] : value
-    //         } ;
-    //     }) ;
-
-    // }
-
-    // function addNote(event){
-    //   event.preventDefault() ;
-    //   setNotes( prevNotes => {
-    //     return [...prevNotes , note]
-    //   });
-
-    //   setNote({
-    //     title:"",
-    //     content:""
-    //   }) ;
-      
-    // }
-    // console.log("arr",notesArr) ;
-
   return (
     <div>
       <form onSubmit={props.onAddition}>

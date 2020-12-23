@@ -37,7 +37,16 @@ function App(){
       }) ;
       
     }
-    // console.log("arr",notesArr) ;
+
+    function deleteNote(id){
+
+        setNotes( prevNotes => {
+            return prevNotes.filter( (item , idx)=>{
+                return idx !== id ;
+            });
+        });
+
+    }
 
     return (
         <div>
@@ -53,6 +62,7 @@ function App(){
                 id={index}
                 title={iNote.title}
                 content={iNote.content}
+                onDeletion={deleteNote}
                 />
             ))}
             <Footer />
